@@ -29,14 +29,14 @@ $(function(){
 
 		if (scrollPosition > scrollHeight - bottomPos){
 			$(LOADING_DIV).fadeIn("fast");
-			if (max >= ((LIMIT * page) - LIMIT && fire == true
+			if (max >= ((page * LIMIT) - LIMIT) && fire == true
 				|| max == 0 && page == 1 && fire == false){
 				fire = false;
 				console.log('loading...');
 				getDataAPI();
 				page++;
 			}
-			else if (max < ((page*LIMIT) - LIMIT) && max > 0) {
+			else if (max < ((page * LIMIT) - LIMIT) && max > 0) {
 				console.log('end');
 				$(LOADING_DIV).remove();
 			}
