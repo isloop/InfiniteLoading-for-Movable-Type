@@ -29,7 +29,7 @@ $(function(){
 
 		if (scrollPosition > scrollHeight - bottomPos){
 			$(LOADING_DIV).fadeIn("fast");
-			if (max >= ((LIMIT * page) - LIMIT && fire == true)
+			if (max >= ((LIMIT * page) - LIMIT && fire == true
 				|| max == 0 && page == 1 && fire == false){
 				fire = false;
 				console.log('loading...');
