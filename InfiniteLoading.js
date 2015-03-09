@@ -46,7 +46,7 @@ $(function(){
 	function getDataAPI(){
 		$.ajax({
 			type: "GET",
-			url: choiceURL(mode),
+			url: choiceURL(),
 			dataType: 'json',
 			success: function(res){
 				appendHTML(res);
@@ -72,7 +72,7 @@ $(function(){
 		}
 	}
 
-	function choiceURL(mode){
+	function choiceURL(){
 		var uri = new String();
 		if (mode == "category") {
 			var categoryid = $(SCRIPT_ID).data('categoryid');
