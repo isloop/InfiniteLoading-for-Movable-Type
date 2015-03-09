@@ -10,10 +10,10 @@ Movable Type 6のData APIを使って、インデックス、カテゴリアー�
 
 ##使い方
 
-####STEP 1: headタグ内に下のスクリプトを入れる。
+####1: headタグ内に下のスクリプトを入れる。
 <pre>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js&quot;&gt;&lt;/script&gt;</pre>
 
-####STEP 2: InfiniteLoading.jsを自分用にカスタマイズする。
+####2: InfiniteLoading.jsを自分用にカスタマイズする。
 <pre>
 const LIMIT       = 30;                     //読み込むエントリー数
 const MT_PATH     = "http://hoge.com/mt/";  //mt.cgiのある絶対パス
@@ -21,7 +21,7 @@ const LOADING_DIV = "#nowloading";          //ローディングを表示するd
 const APPEND_DIV  = "#recentPart";          //生成したHTML追加するdivの名前
 const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre>
 
-####STEP 3: テンプレートのheadタグ内に下のスクリプトを入れる。
+####3: テンプレートのheadタグ内に下のスクリプトを入れる。
 
 インデックスアーカイブの場合
 <pre>&lt;script src=&quot;//hoge.com/js/InfiniteLoading.js&quot; id=&quot;loading&quot; data-mode=&quot;index&quot; data-style=&quot;pc&quot;&gt;&lt;/script&gt;</pre>
@@ -31,7 +31,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 
 ※もちろんInfiniteLoadingは指定したURLにアップロードしておいてください。
 
-####STEP 4: MTのテンプレートを以下のように構成。（InfiniteLoading.js内でidの指定は可能）
+####4: MTのテンプレートを以下のように構成。（InfiniteLoading.js内でidの指定は可能）
 
 <pre>&lt;div id=&quot;recentPart&quot;&gt;
 &lt;MTEntries limit=&quot;30&quot;&gt;
@@ -40,7 +40,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 &lt;/div&gt;
 &lt;div id=&quot;nowloading&quot;&gt;&lt;/div&gt;</pre>
 
-####STEP 5: CSSでnowloadingを設定します。
+####5: CSSでnowloadingを設定したら完了。
 <pre>#nowloading {
   margin-left: auto;
   margin-right: auto;
@@ -51,8 +51,6 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
   background-position: center;
   background-repeat: no-repeat;
 }</pre>
-
-####STEP 6: あとはスクロールすれば無限スクロールします。
 
 ##デザインのカスタマイズ
 
