@@ -86,3 +86,7 @@ https://github.com/movabletype/Documentation/wiki/Quick-reference
 
 javascript 正規表現 画像のURL href のみ抜き出し<br />
 http://matomater.com/592/
+
+##記事
+Movable Type 6のData APIを使ってカンタンに無限スクロールを実装できるJavascript作った！<br />
+http://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
