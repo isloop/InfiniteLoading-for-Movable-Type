@@ -31,7 +31,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 
 ※もちろんInfiniteLoadingは指定したURLにアップロードしておいてください。
 
-####4. MTのテンプレートを以下のように構成。（InfiniteLoading.js内でidの指定は可能）
+####4. MTのテンプレートを以下のように構成。
 
 <pre>&lt;div id=&quot;recentPart&quot;&gt;
 &lt;MTEntries limit=&quot;30&quot;&gt;
