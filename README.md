@@ -34,9 +34,9 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 ####4. MTのテンプレートを以下のように構成。
 
 <pre>&lt;div id=&quot;recentPart&quot;&gt;
-&lt;MTEntries limit=&quot;30&quot;&gt;
-&lt;!-- 中略 --&gt;
-&lt;/MTEntries&gt;
+　&lt;MTEntries limit=&quot;30&quot;&gt;
+　　&lt;!-- 中略 --&gt;
+　&lt;/MTEntries&gt;
 &lt;/div&gt;
 &lt;div id=&quot;nowloading&quot;&gt;&lt;/div&gt;</pre>
 
