@@ -18,22 +18,25 @@ $(function(){
 	var style 	= $(SCRIPT_ID).data('style');
 	var page 	= 1;
 	var max 	= 0;
+	var fire	= false;
 
 	$(LOADING_DIV).fadeOut("fast");
 
-	$(window).on("scroll" , function(e){
+	$(window).on("scroll" , function(){
 		var bottomPos = 100;
 		var scrollHeight = $(document).height();
 		var scrollPosition = $(window).height() + $(window).scrollTop();
 
 		if (scrollPosition > scrollHeight - bottomPos){
 			$(LOADING_DIV).fadeIn("fast");
-			if (max >= ((LIMIT * page) - LIMIT) || max == 0 ){
+			if (max >= ((LIMIT * page) - LIMIT && fire == true)
+				|| max == 0 && page == 1 && fire == false){
+				fire = false;
 				console.log('loading...');
 				getDataAPI();
 				page++;
 			}
-			else {
+			else if (max < ((page*LIMIT) - LIMIT) && max > 0) {
 				console.log('end');
 				$(LOADING_DIV).remove();
 			}
@@ -50,7 +53,7 @@ $(function(){
 				$(LOADING_DIV).fadeOut();
 			},
 			error:function(){console.log('Error...');},
-			complete:function(){}
+			complete:function(){fire = true;}
 		});
 	}
 
