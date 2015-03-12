@@ -9,7 +9,7 @@
 $(function(){
 
 	const LIMIT       = 30;	                       //読み込むエントリー数
-	const MT_PATH     = "http://hoge.com/mt/";     //mt.cgiのあるURL
+	const MT_PATH     = "http://hoge.com/mt/";     //mt.cgiのあるディレクトリURL
 	const LOADING_DIV = "#nowloading";             //ローディングを表示するdivのid名
 	const APPEND_DIV  = "#recentPart";             //生成したHTMLを追加するdivのid名
 	const SCRIPT_ID   = "#loading";                //スクリプトのid名
