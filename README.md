@@ -16,7 +16,7 @@ Movable Type 6のData APIを使って、インデックス、カテゴリアー�
 ####2. InfiniteLoading.jsを自分用にカスタマイズする。
 <pre>
 const LIMIT       = 30;                     //読み込むエントリー数
-const MT_PATH     = "http://hoge.com/mt/";  //mt.cgiのある絶対パス
+const MT_PATH     = "http://hoge.com/mt/";  //mt.cgiのあるディレクトリのURL
 const LOADING_DIV = "#nowloading";          //ローディングを表示するdivの名前
 const APPEND_DIV  = "#recentPart";          //生成したHTML追加するdivの名前
 const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre>
