@@ -41,6 +41,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 &lt;div id=&quot;nowloading&quot;&gt;&lt;/div&gt;</pre>
 
 ####5. CSSでnowloadingを設定したら完了。
+
 <pre>#nowloading {
   margin-left: auto;
   margin-right: auto;
