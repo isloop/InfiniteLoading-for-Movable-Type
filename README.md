@@ -52,6 +52,11 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
   background-repeat: no-repeat;
 }</pre>
 
+ローディング画像は以下のサービスを使うとサクッと作れます。↓↓
+
+Ajaxを使ったときに便利なローディング画像をサクっとつくれるウェブサービス「Loader Generator」
+http://wayohoo.com/web-service/loader-generator.html
+
 ##デザインのカスタマイズ
 
 - scriptのdata-styleの中身を「pc」にすればInfiniteLoading内のfunction pcStyle()のテンプレートでHTMLをはき出します。
