@@ -54,7 +54,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 
 ローディング画像は以下のサービスを使うとサクッと作れます。↓↓
 
-Ajaxを使ったときに便利なローディング画像をサクっとつくれるウェブサービス「Loader Generator」
+ローディング画像をサクっとつくれるウェブサービス「Loader Generator」
 http://wayohoo.com/web-service/loader-generator.html
 
 ##デザインのカスタマイズ
