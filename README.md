@@ -53,7 +53,6 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
 }</pre>
 
 ローディング画像は以下のサービスを使うとサクッと作れます。↓↓
-
 http://wayohoo.com/web-service/loader-generator.html
 
 ##デザインのカスタマイズ
