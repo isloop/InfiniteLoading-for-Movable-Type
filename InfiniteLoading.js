@@ -64,10 +64,10 @@ $(function(){
 			var date = dateFromStr(res.items[i].createdDate);
 			var mainCategory = res.categories.shift().label;
 			if (style == "mobile") {
-				html = mobileStyle(res.items[i],image,date);
+				html = mobileStyle(res.items[i],image,date,mainCategory);
 			}
 			else {
-				html = pcStyle(res.items[i],image,date);
+				html = pcStyle(res.items[i],image,date,mainCategory);
 			}
 			$(APPEND_DIV).append(html);
 		}
