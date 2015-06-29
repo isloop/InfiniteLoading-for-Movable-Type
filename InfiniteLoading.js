@@ -62,7 +62,7 @@ $(function(){
 		for (var i = 0; i < res.items.length; i++) {
 			var image = imageURLFromStr(res.items[i].body)
 			var date = dateFromStr(res.items[i].createdDate);
-			var mainCategory = res.categories.shift().label;
+			var mainCategory = res.items[i].categories.shift().label;
 			if (style == "mobile") {
 				html = mobileStyle(res.items[i],image,date,mainCategory);
 			}
