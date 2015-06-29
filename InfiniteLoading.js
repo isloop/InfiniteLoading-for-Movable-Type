@@ -62,6 +62,7 @@ $(function(){
 		for (var i = 0; i < res.items.length; i++) {
 			var image = imageURLFromStr(res.items[i].body)
 			var date = dateFromStr(res.items[i].createdDate);
+			var mainCategory = res.categories.shift().label;
 			if (style == "mobile") {
 				html = mobileStyle(res.items[i],image,date);
 			}
@@ -85,7 +86,7 @@ $(function(){
 		return uri;
 	}
 
-	function mobileStyle(res,image,date) {
+	function mobileStyle(res,image,date,mainCategory) {
 		var html = new String();
 		html   = "<li>";
 		html += 	"<span class=\"entryList\">"
@@ -95,6 +96,7 @@ $(function(){
 		html +=				"</span>";
 		html += 			"<span class=\"index-list-title\">";
 		html +=					"<small class=\"updateDate\">" + date + "</small><br />";
+		html +=					"<small class=\"categoryName\">" + mainCategory + "</small><br />";
 		html += 				res.title;
 		html +=				"</span>"
 		html +=			"</a>";
@@ -104,7 +106,7 @@ $(function(){
 		return html;
 	}
 
-	function pcStyle(res,image,date) {
+	function pcStyle(res,image,date,mainCategory) {
 		var html = new String();
 		html   = "<section class=\"recentCapsule\">";
 		html += 	"<div class=\"thumbnailBody\">"
@@ -121,6 +123,9 @@ $(function(){
 		html +=			"<time class=\"updateDate\" datetime=\"" + res.createdDate + "\">";
 		html +=				date;
 		html +=			"</time>";
+		html +=			"<div class=\"categoryName\">";
+		html +=				mainCategory;
+		html +=			"</div>";
 		html += 	"</h2>";
 		html += "</section>";
 		return html;
