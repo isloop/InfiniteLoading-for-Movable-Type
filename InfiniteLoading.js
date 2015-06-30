@@ -62,7 +62,7 @@ $(function(){
 		for (var i = 0; i < res.items.length; i++) {
 			var image = imageURLFromStr(res.items[i].body)
 			var date = dateFromStr(res.items[i].createdDate);
-			var mainCategory = res.items[i].categories.shift().label;
+			var mainCategory = res.items[i].categories.shift();
 			if (style == "mobile") {
 				html = mobileStyle(res.items[i],image,date,mainCategory);
 			}
@@ -96,7 +96,7 @@ $(function(){
 		html +=				"</span>";
 		html += 			"<span class=\"index-list-title\">";
 		html +=					"<small class=\"updateDate\">" + date + "</small><br />";
-		html +=					"<small class=\"categoryName\">" + mainCategory + "</small><br />";
+		html +=					"<small class=\"categoryName\">" + mainCategory.label + "</small><br />";
 		html += 				res.title;
 		html +=				"</span>"
 		html +=			"</a>";
@@ -124,7 +124,7 @@ $(function(){
 		html +=				date;
 		html +=			"</time>";
 		html +=			"<div class=\"categoryName\">";
-		html +=				mainCategory;
+		html +=				mainCategory.label;
 		html +=			"</div>";
 		html += 	"</h2>";
 		html += "</section>";
