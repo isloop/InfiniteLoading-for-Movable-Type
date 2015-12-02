@@ -94,4 +94,7 @@ http://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
 
 ##LICENSE
 
-- InfiniteLoading for Movable Type is available under the MIT license. See the LICENSE file for more info.
+InfiniteLoading for Movable Type is available under the MIT license. <br>
+See the LICENSE file for more info.
+
+https://github.com/isloop/InfiniteLoading-for-Movable-Type/blob/master/LICENSE
