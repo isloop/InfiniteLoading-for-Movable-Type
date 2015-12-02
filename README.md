@@ -73,15 +73,6 @@ http://wayohoo.com/web-service/loader-generator.html
 - data-modeの引数は、"index"と"category"の2つです。
 - data-modeで"category"をした場合は、data-categoryid=を必ず指定してください。
 
-##クレジット
-
-- 自由に使って頂いてかまいません。
-- クレジットを消さずに使ってくれると大変嬉しいです。
-
-##免責事項
-
-- このスクリプトを使ったことによるいかなる損失・損害についても当方では責任を負うものではありませんのでご了承ください。
-
 ##参考
 
 外部ファイルを読み込んだ、無限スクロール(2)<br />
@@ -96,3 +87,7 @@ http://matomater.com/592/
 ##記事
 Movable Type 6のData APIを使ってカンタンに無限スクロールを実装できるJavascript作った！<br />
 http://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
+
+##LICENSE
+
+- InfiniteLoading for Movable Type is available under the MIT license. See the LICENSE file for more info.
