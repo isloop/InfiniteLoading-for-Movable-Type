@@ -88,6 +88,10 @@ http://matomater.com/592/
 Movable Type 6のData APIを使ってカンタンに無限スクロールを実装できるJavascript作った！<br />
 http://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
 
+##Author
+
+@isloop https://twitter.com/isloop
+
 ##LICENSE
 
 - InfiniteLoading for Movable Type is available under the MIT license. See the LICENSE file for more info.
