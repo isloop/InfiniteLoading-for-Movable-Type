@@ -1,6 +1,9 @@
 //
 //  InfiniteLoading for Movable Type
 //
+//  by:  @isloop 
+//  URL: https://github.com/isloop/InfiniteLoading-for-Movable-Type
+//
 
 $(function(){
 
