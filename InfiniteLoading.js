@@ -1,15 +1,11 @@
 //
-//  InfiniteLoading.js
 //  InfiniteLoading for Movable Type
-//
-//  Created by isloop on 2015/03/09.
-//  Copyright (c) @isloop. All rights reserved.
 //
 
 $(function(){
 
 	const LIMIT       = 30;	                       //読み込むエントリー数
-	const MT_PATH     = "http://hoge.com/mt/";     //mt.cgiのあるディレクトリURL
+	const MT_PATH     = "//hoge.com/mt/";     //mt.cgiのあるディレクトリURL
 	const LOADING_DIV = "#nowloading";             //ローディングを表示するdivのid名
 	const APPEND_DIV  = "#recentPart";             //生成したHTMLを追加するdivのid名
 	const SCRIPT_ID   = "#loading";                //スクリプトのid名
