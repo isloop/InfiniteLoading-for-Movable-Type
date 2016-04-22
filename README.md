@@ -16,7 +16,7 @@ Movable Type 6のData APIを使って、インデックス、カテゴリアー�
 ####2. InfiniteLoading.jsを自分用にカスタマイズする。
 <pre>
 const LIMIT       = 30;                     //読み込むエントリー数
-const MT_PATH     = "http://hoge.com/mt/";  //mt.cgiのあるディレクトリのURL
+const MT_PATH     = "//hoge.com/mt/";  //mt.cgiのあるディレクトリのURL
 const LOADING_DIV = "#nowloading";          //ローディングを表示するdivの名前
 const APPEND_DIV  = "#recentPart";          //生成したHTML追加するdivの名前
 const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre>
@@ -48,7 +48,7 @@ const SCRIPT_ID   = "#loading";             //スクリプトのIDの名前</pre
   text-align: center;
   width: 30px;
   height: 30px;
-  background-image: url("http://hoge.com/images/loading.gif"); //ローディング画像のURL（30x30）
+  background-image: url("//hoge.com/images/loading.gif"); //ローディング画像のURL（30x30）
   background-position: center;
   background-repeat: no-repeat;
 }</pre>
@@ -86,7 +86,7 @@ http://matomater.com/592/
 
 ##記事
 Movable Type 6のData APIを使ってカンタンに無限スクロールを実装できるJavascript作った！<br />
-http://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
+https://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
 
 ##Author
 
