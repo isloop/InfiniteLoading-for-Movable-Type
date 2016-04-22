@@ -12,7 +12,6 @@ $(function(){
 	const LOADING_DIV = "#nowloading";             //ローディングを表示するdivのid名
 	const APPEND_DIV  = "#recentPart";             //生成したHTMLを追加するdivのid名
 	const SCRIPT_ID   = "#loading";                //スクリプトのid名
-
 	var mode 	= $(SCRIPT_ID).data('mode');
 	var style 	= $(SCRIPT_ID).data('style');
 	var page 	= 1;
