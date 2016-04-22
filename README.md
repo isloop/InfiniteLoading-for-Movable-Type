@@ -88,6 +88,6 @@ http://matomater.com/592/
 Movable Type 6のData APIを使ってカンタンに無限スクロールを実装できるJavascript作った！<br />
 https://wayohoo.com/programming/javascript/infinite-loading-for-movable-type.html
 
-##Author
+##書いた人
 
 @isloop https://twitter.com/isloop
